@@ -11,6 +11,7 @@ public class Questao1 {
 		
 		int n=0,i=0,x=0;
 		String space = " ";
+		String asterisk = "*";
 		
 		System.out.print("\nVamos fazer uma escada com asteriscos :) !"
 		+ "\nDigite a quantidade de asteriscos que a escada terá em sua base: \n");
@@ -22,7 +23,7 @@ public class Questao1 {
 			System.out.print(space.repeat(x));
 			x--;	
 			
-			System.out.print("*".repeat(i)+"\n");
+			System.out.print(asterisk.repeat(i)+"\n");
 			
 			}		
 	}

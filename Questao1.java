@@ -15,15 +15,16 @@ public class Questao1 {
 		
 		System.out.print("\nVamos fazer uma escada com asteriscos :) !"
 		+ "\nDigite a quantidade de asteriscos que a escada terá em sua base: \n");
-		n=leia.nextInt();
-		x=n;
+		n=leia.nextInt(); //recebe o valor base
 		
-		for(i=1;i<=n;i++) {
+		
+		x=n;
+		for(i=0;i<=n;i++) {  //n - quantidade de vezes que o código irá se repetir
 			
-			System.out.print(space.repeat(x));
-			x--;	
+			System.out.print(space.repeat(x)); //Quantidade de espaços impresso. Começará com o mesmo valor inserido em n
+			x--;	//diminuirá conforme o loop roda
 			
-			System.out.print(asterisk.repeat(i)+"\n");
+			System.out.print(asterisk.repeat(i)+"\n"); //Quantidade de steriscos impressos
 			
 			}		
 	}

@@ -38,7 +38,6 @@ public class Questao3 {
 			 }
 		  }
 	   }
-
 		//contagem final para resultado de anagramas
 		int contagemP = 0;
 		for (String cont : lista.keySet()) {

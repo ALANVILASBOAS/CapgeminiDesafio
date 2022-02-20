@@ -44,6 +44,6 @@ public class Questao3 {
 			int z = lista.get(cont);
 			contagemP += ((z - 1)*z)/2;
 		}
-		System.out.print("Quantidade de pares que são anagramas é de " + contagemP);
+		System.out.print("A quantidade de pares de anagramas na palavra é: \n"+ contagemP);
 		}
 	}

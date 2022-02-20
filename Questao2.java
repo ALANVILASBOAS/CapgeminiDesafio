@@ -25,29 +25,42 @@ public class Questao2 {
 	public static void main(String[] args) {
 	Scanner leia = new Scanner (System.in);
 	
-	String nome = null;
-	String senha = null;
+	String nome = ""; 
+	String senha = "";
 	
+	System.out.println("--- Vamos completar o cadastro ---");
 	System.out.println("Digite seu nome:");
 	nome=leia.nextLine();
 	
 	System.out.println("Digite sua senha: ");
 	senha=leia.nextLine();
 	
-	while (true) {
+	
+	
+	/* 
+	  verifica:
+	   (?=.*[0-9]) - se tem numeros
+	   (?=.*[a-z]) - se tem letras minusculas
+	   (?=.*[A-Z]) - se tem letras maiusculas
+	      (?=.*[]) - se há algum dos caracteres que está dentro dos colchetes
+	          {6,} - Se tem ao menos 6 caracteres no total
+	 */
+	while (true) { 
 	if (senha.matches("(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#&()–[{}]:;',?/*~$^+=<>]).{6,}"))
 		{
-		System.out.println("A senha está forte! Cadastro completo.");
+		
+		   	//se a senha preencher todos os requisitos, imprima:
+		System.out.println("A senha está forte!\nCadastro do usuário: "+nome+"\nFinalizado.");
 		break;
+		   //se não, informe ao usuário o que é necessário para preencher os requisitos,
+		   //e solicite a senha novamente.
 		} else {
 			System.out.println("A senha está fraca.\nUma senha forte precisa de pelo menos:\n"
 			+ "6 caracteres | 1 número | 1 letra minúscula | 1 letra maiúscula | 1 Caractere especial\n"
 			+ "Digite a senha novamente: ");
 			senha=leia.nextLine();
 		}
-
 	}
-	
 }
 }
 

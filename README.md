@@ -11,7 +11,7 @@
 ## Instruções
 <br>Clonar repositório pelo git bash: git clone https://github.com/ALANVILASBOAS/CapgeminiDesafio.git
 <br>Abrir projeto com uma IDE.
-<br>Executar o código as questões que se encontram na pasta src/desafio.
+<br>Executar o código das questões que se encontram na pasta src/desafio.
 
 ## Questão 01
 
